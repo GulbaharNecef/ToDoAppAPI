@@ -1,0 +1,37 @@
+﻿@ToDoAppAPI_HostAddress = https://localhost:7224
+
+POST {{ToDoAppAPI_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+ "name": "make your bed",
+ "isComplete": false
+}
+
+###
+
+GET {{ToDoAppAPI_HostAddress}}/todoitems
+
+###
+
+GET {{ToDoAppAPI_HostAddress}}/todoitems/3
+
+###
+
+GET {{ToDoAppAPI_HostAddress}}/todoitems/complete
+
+###
+
+PUT {{ToDoAppAPI_HostAddress}}/todoitems/3
+Content-Type: application/json
+
+{
+ "name": "make your bed",
+ "isComplete": false
+}
+
+###
+
+DELETE {{ToDoAppAPI_HostAddress}}/todoitems/4
+
+###
